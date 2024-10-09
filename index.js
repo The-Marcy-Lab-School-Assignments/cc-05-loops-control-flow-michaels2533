@@ -25,9 +25,23 @@ const sumOfFourAndSix = () => {
   return sum;
 };
 
-// const oddAndEvenToN = (num) => {
-//     for(let i = 0; i < )
-// };
+const oddAndEvenToN = (num) => {
+  for (let i = 0; i <= 5; i++) {
+    if (i % 2 === 0) {
+      console.log(`${i} is even`);
+    } else {
+      console.log(`${i} is odd`);
+    }
+  }
+};
+
+const sumOfNotDivisibleByTen = () => {
+  let sum = 0;
+  for (let i = 1; i <= 1000; i++) {
+    i % 10 !== 0 ? (sum += i) : null;
+  }
+  return sum;
+};
 
 //Problems
 console.log("------Problems 1 ------");
@@ -40,5 +54,7 @@ console.log(greaterNum("21", "21")); //returns null
 console.log("------Problems 3 ------");
 console.log(sumOfFourAndSix()); //returns 41832
 console.log("------Problems 4 ------");
+oddAndEvenToN(5);
 console.log("------Problems 5 ------");
+console.log(sumOfNotDivisibleByTen()); // returns 450000
 console.log("------Problems 6 ------");
